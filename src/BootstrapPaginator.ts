@@ -9,7 +9,7 @@ import * as _ from "lodash";
     <mfPaginator #p [mfTable]="mfTable">
         <nav class="pagination" *ngIf="p.dataLength > p.rowsOnPage">
             <li class="page-item" [class.disabled]="p.activePage <= 1" (click)="p.setPage(1)">
-                <a style="cursor: pointer">&laquo;</a>
+                <a class="page-link" style="cursor: pointer">&laquo;</a>
             </li>
             <li class="page-item" *ngIf="p.activePage > 4 && p.activePage + 1 > p.lastPage" (click)="p.setPage(p.activePage - 4)">
                 <a class="page-link" tyle="cursor: pointer">{{p.activePage-4}}</a>
