@@ -32,8 +32,8 @@ import * as _ from "lodash";
             <li class="page-item" *ngIf="p.activePage + 2 <= p.lastPage" (click)="p.setPage(p.activePage + 2)">
                 <a class="page-link" tyle="cursor: pointer">{{p.activePage+2}}</a>
             </li>
-            <li *ngIf="p.activePage + 3 <= p.lastPage && p.activePage < 3" (click)="p.setPage(p.activePage + 3)">
-                <a style="cursor: pointer">{{p.activePage+3}}</a>
+            <li class="page-item" *ngIf="p.activePage + 3 <= p.lastPage && p.activePage < 3" (click)="p.setPage(p.activePage + 3)">
+                <a class="page-link" style="cursor: pointer">{{p.activePage+3}}</a>
             </li>
             <li class="page-item" *ngIf="p.activePage + 4 <= p.lastPage && p.activePage < 2" (click)="p.setPage(p.activePage + 4)">
                 <a class="page-link" tyle="cursor: pointer">{{p.activePage+4}}</a>
